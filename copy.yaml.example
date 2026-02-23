@@ -1,0 +1,16 @@
+workers: null       # null → os.cpu_count(); applies to all parallel operations
+
+paths:
+  image_dir:  /FolderPath/CelebAMask-HQ/CelebA-HQ-img
+  mask_dir:   /FolderPath/CelebAMask-HQ-mask-anno
+  output_dir: /FolderPath/CelebAMask-HQ/oval-annotation
+
+dataset:
+  total_images:       30000
+  images_per_folder:  2000
+
+processing:
+  start:          0
+  end:            30000
+  save_masks:     false
+  save_overlays:  false
